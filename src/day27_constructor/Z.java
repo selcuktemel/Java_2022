@@ -8,11 +8,12 @@ public class Z {
     boolean gercekMi;
 
     // burasi çok önemli
-    public Z(String ism, String soyism, int no, boolean grc) {
-        isim = ism;
-        soyisim = soyism;
-        numara = no;
-        gercekMi = grc;
+    public Z(String isim, String soyisim, int numara, boolean gercekMi) {
+       this.isim = isim;//isim = ism;
+       this.soyisim = soyisim;//soyisim = soyism;
+       this.numara = numara;//  numara = no;
+       this.gercekMi = gercekMi;//gercekMi = grc;
+ 
     }
 
     public Z(String isim, String soyisim, int numara) {
@@ -24,7 +25,8 @@ public class Z {
 
     public String toString() {
 
-        return ("isim : " + isim + " Soyisim : " + soyisim + " Numara : " + numara + " gercekMi : " + gercekMi);
+        return ("isim : " + isim + " Soyisim : " + soyisim + " Numara : "
+                + numara + " gercekMi : " + gercekMi);
 
     }
 

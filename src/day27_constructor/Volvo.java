@@ -4,7 +4,7 @@ public class Volvo {
     String marka = "Volvo";
     String mensei = "Isvec";
     String model;
-    boolean elektrliMi;
+    boolean elektrikliMi;
     int yil;
     String yakit;
     boolean otomatikPilot = otomatikPilotSorgusu();
@@ -12,43 +12,43 @@ public class Volvo {
 
     public Volvo(String mdl, boolean elk, int yl, String ykt) {
         model = mdl;
-        elektrliMi = elk;
+        elektrikliMi = elk;
         yil = yl;
         yakit = ykt;
-        otomatikPilot = otomatikPilotSorgusu();
         maxHiz = maxHizAta();
+        otomatikPilot = otomatikPilotSorgusu();
     }
 
     public Volvo() {
-
     }
 
     public int maxHizAta() {
-        int max = 0;
-        if (elektrliMi) {
-            max = 160;
+        int maxHiz = 0;
+        System.out.println("soru : " + elektrikliMi);
+        if (elektrikliMi) {
+            maxHiz = 160;
         } else {
-            max = 240;
+            maxHiz = 240;
         }
-        return max;
+        return maxHiz;
     }
 
     public boolean otomatikPilotSorgusu() {
         boolean sonuc = false;
-        if (elektrliMi) {
+        if (elektrikliMi) {
             sonuc = true;
         }
         return sonuc;
     }
 
-    public String toString() {// methodun adını toString koyarsanız direkt yazdirabilirisnz.
-        String arabaOzellikleri = "Model : " + model + ", Yakit : " + yakit +
-                ", Max hiz : " + maxHizAta();
-
-
+    public String toString() {
+        String arabaOzellikleri = "Model : " + model +
+                                  " Yakit : " + yakit +
+                                 " Max Hiz : " + maxHiz;
         return arabaOzellikleri;
     }
-
-
 }
+
+
+
 
