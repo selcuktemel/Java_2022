@@ -8,7 +8,7 @@ public class C06_StringBuilder {
 String str="Hayatta cok guzel seyler var";
 // bu strinden bir parcayi alıp sb1 eklemek istersem.
         System.out.println(sb1.insert(0,str,0,8));//Hayatta Prize dikkat edin.
-
+        System.out.println(sb1.reverse());
         System.out.println(sb1.reverse());// tersten yazdirma
         //.nide takkid ezirP attayaH
 
