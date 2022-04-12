@@ -12,16 +12,21 @@ public class C05_Exepcitions {
         Scanner scanner = new Scanner(System.in);
         int toplam = 0;
         do {
-            System.out.println("lütfen toplamak istediğiniz sayiyi giriniz\n bitirmek icin Q ya basınız");
+            System.out.println("lütfen toplamak istediğiniz sayiyi giriniz\nbitirmek icin Q ya basınız");
             int sayi = 0;
             try {
                 sayi = scanner.nextInt();
-            } catch (InputMismatchException e) {
-
-
+                toplam += sayi;
+            } catch (Exception e) {
+                String hataliGiris = scanner.next();
+                if (hataliGiris.equalsIgnoreCase("q")) {
+                    break;
+                } else {
+                    System.out.println("hatali giris " + e);
+                }
             }
-            toplam += sayi;
         } while (toplam < 500);
+        System.out.println("girdiginiz satılaraın toplamı : " + toplam);
 
 
     }
