@@ -5,7 +5,8 @@ public class C01_Static {
     static  String okulTelefonu="056498479";
 
     public static void staticMethod(){
-            System.out.println("static method çalıstı");
+
+        System.out.println("static method çalıstı");
         }
 
     public  void staticOlmayanMethod(){

@@ -20,7 +20,6 @@ public class ortalama {
         for (int i = 0; i <arr.length ; i++) {
             if (arr[i] > ortalama) {
                 sayilar.add(arr[i]);
-
             }
         }
         System.out.println(sayilar);

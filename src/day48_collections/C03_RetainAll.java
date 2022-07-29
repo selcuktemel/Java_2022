@@ -1,0 +1,23 @@
+package day48_collections;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class C03_RetainAll {
+    public static void main(String[] args) {
+        Set<Integer> set1 = new HashSet<>();
+        Set<Integer> set2 = new HashSet<>();
+        set1.add(10);
+        set1.add(20);
+        set2.addAll(set1);
+        set2.add(25);
+        set2.add(30);
+        System.out.println(set1); // [20, 10]
+        System.out.println(set2); // [20, 25, 10, 30]
+        System.out.println(set2.retainAll(set1)); // true
+        //set2'ye git set1'in elemanaları dısında ne varsa sil
+        System.out.println(set1); // [20, 10]
+        System.out.println(set2); // [20, 10]
+        // iki set birbibirne esit hale geldi
+    }
+}

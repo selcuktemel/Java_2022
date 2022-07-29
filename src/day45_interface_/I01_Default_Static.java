@@ -3,14 +3,14 @@ package day45_interface_;
 public interface I01_Default_Static {
 
     /*
-    interfacelerde sadec abstract method'lar bulunur.
+    interfacelerde sadece abstract method'lar bulunur.
     Body'si olan concrete bir method olusturmak istediğimizde java CTE verir.
     Ancak java8 ve uzeri versiyonlarda, istisnai olarak static veya default olarak tanımlanan methodlarin body'si olabilir.
 
     ancak burada kullanılan default keyword'u access modifier degildir.
     cunku ınterface'lerde tum methodlar public ve abstract'tır.
 
-    Asagıdaki ornekte gorulecegi gibi default olarak ranımlanmıs bir method'a access modifier olarak public yazabilirsiniz
+    Asagıdaki ornekte gorulecegi gibi default olarak tanımlanmıs bir method'a access modifier olarak public yazabilirsiniz
     (access nodifier yazmasak da Java methodu public olarak kabul edecektir.)
      */
 
